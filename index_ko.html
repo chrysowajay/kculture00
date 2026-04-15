@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글로벌 K-컬처 엘리트 프로그램</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html {
+            font-size: 15px;
+        }
+
+        body {
+            font-family: var(--font-ko);
+        }
+
+        .hero-title,
+        .section-title,
+        .track-title,
+        .opp-num,
+        .rank-value {
+            font-family: var(--font-en);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        a,
+        div,
+        span,
+        li,
+        th,
+        td,
+        summary {
+            font-family: var(--font-ko);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            K-Culture
+        </div>
+        <div class="nav-links">
+            <a href="#about" class="nav-item">소개</a>
+            <a href="#curriculum" class="nav-item">교육과정</a>
+            <a href="#career" class="nav-item">진로</a>
+            <a href="#center" class="nav-item">교육시설</a>
+            <a href="#partners" class="nav-item">산학협력</a>
+            <a href="#faculty" class="nav-item">교수진</a>
+            <a href="#scholarship" class="nav-item">오디션/장학</a>
+            <div class="lang-switch">
+                <a href="index.html">EN</a> | <a href="index_ko.html" class="active">KR</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" style="position: relative; overflow: hidden;">
+        <video autoplay loop muted playsinline poster="assets/hero-bg.png"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; filter: brightness(0.4);">
+            <source src="assets/초_K팝_댄스_영상_생성.mp4" type="video/mp4">
+        </video>
+        <div class="hero-bg"
+            style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-1; display:none;">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal">
+                Global K-Culture Elite Program
+            </h1>
+            <p class="hero-subtitle reveal">
+                외국인 유학생 오디션 기반 학위 및 실무 교육 프로그램
+            </p>
+            <div class="hero-cta reveal">
+                <a href="#apply" class="cta-btn primary">
+                    오디션 지원
+                </a>
+                <a href="#about" class="cta-btn secondary">
+                    자세히 보기
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about" style="padding: 10rem 0;">
+        <div class="container">
+            <div class="about-text" style="max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title center reveal" style="font-weight: 600;">
+                    차세대 글로벌 스타가 되어보세요
+                </h2>
+                <div class="accent-line center reveal"></div>
+                <p class="desc reveal"
+                    style="text-align: center; margin-bottom: 4rem; color: var(--text-secondary); font-size: 1.2rem; font-weight: 300; line-height: 1.8;">
+                    K-STAR 글로벌 오디션을 통해 입증된 글로벌 유학생들을 위한 맞춤형 과정.<br>
+                    정규 학위 취득과 엔터테인먼트 실무 교육을 병행하여 폭넓은 진로를 개척하세요.
+                </p>
+                <ul class="features" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <li class="reveal" style="flex-direction: column; align-items: center; text-align: center;">
+                        <div>
+                            <h3 style="font-weight: 600;">4년제 글로벌 정규 학위</h3>
+                            <p class="p-small" style="color: var(--text-secondary);">단순 연수가 아닌 대학 정규 학사 학위 취득 제공</p>
+                        </div>
+                    </li>
+                    <li class="reveal" style="flex-direction: column; align-items: center; text-align: center;">
+                        <div>
+                            <h3 style="font-weight: 600;">학생 맞춤 선택 구조</h3>
+                            <p class="p-small" style="color: var(--text-secondary);">5대 트랙 중 주전공 필수 선택, 복수 트랙 융합 이수 가능
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section (5 Major Tracks) -->
+    <section id="curriculum" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title center reveal" style="font-weight: 700;">
+                Multi-Track 교육 구조
+            </h2>
+            <div class="accent-line center reveal"></div>
+            <p class="center reveal"
+                style="color: var(--text-secondary); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6; text-align: center;">
+                1개 주전공 필수 및 관심 분야 복수 트랙 선택 기능으로 융합형 인재 성장을 도모합니다. 트랙별 특화 프로젝트를 통해 개인 실무 포트폴리오를 완성합니다.
+            </p>
+            <div class="reveal" style="background: white; padding: 1.5rem; text-align: center; border-radius: 8px; border: 1px solid var(--border-color); margin-bottom: 4rem;">
+                <p style="font-weight: 600; color: var(--text-primary); font-size: 1.1rem; margin-bottom: 0;">
+                    <span style="color: var(--accent);">언어 정책:</span> 1~2학년 한국어 집중 및 영어 병행 ➜ 3~4학년 전공 심화 및 영어 강의 위주 진행
+                </p>
+            </div>
+
+            <!-- 5 Tracks Grid -->
+            <div class="tracks-grid"
+                style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; margin-bottom: 5rem;">
+                <!-- Track 1: K-Pop Business -->
+                <div class="track-card reveal">
+                    <div class="track-header"
+                        style="flex-direction: column; align-items: flex-start; gap: 0.5rem; border-bottom: none; padding-bottom: 0;">
+                        <h3 class="track-title" style="font-size: 1.3rem;">K-Pop Business</h3>
+                        <p class="track-subtitle" style="font-size: 0.85rem; color: var(--accent);">매니지먼트 & 팬덤 비즈니스</p>
+                    </div>
+                </div>
+                <!-- Track 2: K-Beauty Business -->
+                <div class="track-card reveal">
+                    <div class="track-header"
+                        style="flex-direction: column; align-items: flex-start; gap: 0.5rem; border-bottom: none; padding-bottom: 0;">
+                        <h3 class="track-title" style="font-size: 1.3rem;">K-Beauty Business</h3>
+                        <p class="track-subtitle" style="font-size: 0.85rem; color: var(--accent);">글로벌 뷰티 마케팅 & 이커머스 운영
+                        </p>
+                    </div>
+                </div>
+                <!-- Track 3: K-Performance -->
+                <div class="track-card reveal">
+                    <div class="track-header"
+                        style="flex-direction: column; align-items: flex-start; gap: 0.5rem; border-bottom: none; padding-bottom: 0;">
+                        <h3 class="track-title" style="font-size: 1.3rem;">K-Performance</h3>
+                        <p class="track-subtitle" style="font-size: 0.85rem; color: var(--accent);">공연 기획 & 무대 연출 & 퍼포먼스
+                            브랜딩</p>
+                    </div>
+                </div>
+                <!-- Track 4: Media & Content -->
+                <div class="track-card reveal">
+                    <div class="track-header"
+                        style="flex-direction: column; align-items: flex-start; gap: 0.5rem; border-bottom: none; padding-bottom: 0;">
+                        <h3 class="track-title" style="font-size: 1.3rem;">K-Fusion Media</h3>
+                        <p class="track-subtitle" style="font-size: 0.85rem; color: var(--accent);">콘텐츠 기획 & SNS & 유튜브
+                            비즈니스</p>
+                    </div>
+                </div>
+                <!-- Track 5: Startup -->
+                <div class="track-card reveal">
+                    <div class="track-header"
+                        style="flex-direction: column; align-items: flex-start; gap: 0.5rem; border-bottom: none; padding-bottom: 0;">
+                        <h3 class="track-title" style="font-size: 1.3rem;">Global Startup</h3>
+                        <p class="track-subtitle" style="font-size: 0.85rem; color: var(--accent);">엔터 비즈니스 모델 구축 & 현지
+                            창업 실무</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Track Information -->
+            <div class="tracks-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                <!-- Perf Track -->
+                <div class="card" style="padding: 2rem;">
+                    <h3
+                        style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--accent); border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+                        K-Performance Track</h3>
+                    <ul
+                        style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; line-height: 1.6; color: var(--text-secondary);">
+                        <li>대형 콘서트 및 페스티벌 기획</li>
+                        <li>무대 제작 및 현장 연출 (조명/음향)</li>
+                        <li>퍼포먼스 브랜딩 및 아티스트 디렉팅</li>
+                        <li>공연 비즈니스 제안서 작성 실무</li>
+                    </ul>
+                    <strong style="display: block; font-size: 0.9rem; margin-bottom: 0.5rem;">[ 진출 분야 ]</strong>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">국내외 공연 제작사, 무대 연출 감독, 안무 디렉팅</p>
+                </div>
+
+                <!-- Beauty Track -->
+                <div class="card" style="padding: 2rem;">
+                    <h3
+                        style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--accent); border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+                        K-Beauty Business Track</h3>
+                    <ul
+                        style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; line-height: 1.6; color: var(--text-secondary);">
+                        <li>글로벌 뷰티 마케팅 및 브랜드 런칭 프로젝트</li>
+                        <li>이커머스 운영 전략 및 현지 유통 실습</li>
+                        <li>라이브커머스 기획 및 직접 송출 실습</li>
+                        <li>퍼스널 브랜딩 및 뷰티 크리에이터 양성</li>
+                    </ul>
+                    <strong style="display: block; font-size: 0.9rem; margin-bottom: 0.5rem;">[ 진출 분야 ]</strong>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">화장품 기업 글로벌 마케터, 이커머스 MD, 글로벌 뷰티 크리에이터
+                    </p>
+                </div>
+
+                <!-- Media Track -->
+                <div class="card" style="padding: 2rem;">
+                    <h3
+                        style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--accent); border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
+                        Media & Startup Track</h3>
+                    <ul
+                        style="list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1.5rem; line-height: 1.6; color: var(--text-secondary);">
+                        <li>K-Fusion: 유튜브 비즈니스, SNS 데이터 분석, 콘텐츠 기획</li>
+                        <li>Startup: 엔터 비즈니스 모델 구축, 글로벌 플랫폼 기획</li>
+                        <li>미디어 IP 사업화 및 현지 창업 실무 모델링</li>
+                    </ul>
+                    <strong style="display: block; font-size: 0.9rem; margin-bottom: 0.5rem;">[ 진출 분야 ]</strong>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">미디어 콘텐츠 기획사, 글로벌 엔터테인먼트 스타트업 창업</p>
+                </div>
+            </div>
+
+            <!-- 4 Year Roadmap -->
+            <h3 class="reveal" style="text-align: center; font-size: 1.8rem; margin: 5rem 0 1rem 0; font-weight: 700;">
+                학년별 교육 로드맵</h3>
+            <p class="center reveal" style="color: var(--text-secondary); margin-bottom: 2rem;">언어 정책: 1~2학년 한국어 집중 및 영어
+                병행 ➜ 3~4학년 전공 심화 및 영어 강의 위주 진행</p>
+
+            <div class="roadmap-grid reveal">
+                <div class="roadmap-card">
+                    <div class="roadmap-year">1학년</div>
+                    <h4 class="roadmap-title">기초·적응 단계</h4>
+                    <ul class="roadmap-list">
+                        <li>영어 기반 기초 교육</li>
+                        <li>한국어 집중 교육</li>
+                        <li>K-Culture 산업 이해</li>
+                        <li>비즈니스 마케팅 기초</li>
+                    </ul>
+                </div>
+                <div class="roadmap-card">
+                    <div class="roadmap-year">2학년</div>
+                    <h4 class="roadmap-title">전공 탐색 단계</h4>
+                    <ul class="roadmap-list">
+                        <li>세부 트랙(5대) 선택</li>
+                        <li>엔터 산업 기초 교육</li>
+                        <li>프로젝트 스튜디오 I</li>
+                        <li>산업 현장 탐방</li>
+                    </ul>
+                </div>
+                <div class="roadmap-card">
+                    <div class="roadmap-year">3학년</div>
+                    <h4 class="roadmap-title">실무 심화 단계</h4>
+                    <ul class="roadmap-list">
+                        <li>리빙랩(Lab) 심화 실습</li>
+                        <li>산학 캡스톤 프로젝트</li>
+                        <li>해외 인턴십 (6개월)</li>
+                        <li>글로벌 세일즈 전략</li>
+                    </ul>
+                </div>
+                <div class="roadmap-card">
+                    <div class="roadmap-year">4학년</div>
+                    <h4 class="roadmap-title">취업 연계 단계</h4>
+                    <ul class="roadmap-list">
+                        <li>전문 포트폴리오 랩</li>
+                        <li>졸업 프로젝트 (100% 완료)</li>
+                        <li>취업/데뷔 트랙 집중 지원</li>
+                        <li>본국/국내 취업 연계 (90% 목표)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Career Safety Net Section -->
+    <section id="career" class="section">
+        <div class="container">
+            <h2 class="section-title center reveal" style="font-weight: 700;">
+                커리어 세이프티 넷 및 유학생 케어
+            </h2>
+            <div class="accent-line center reveal"></div>
+
+            <div class="reveal" style="text-align: center; margin-bottom: 3rem;">
+                <p
+                    style="color: var(--text-secondary); font-size: 1.1rem; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+                    산업계로의 진입 기회 제공과 다층적 안전망 구축을 통해 유학생의 성공적인 정착을 지원합니다.
+                </p>
+            </div>
+
+            <!-- Foreign Student Care -->
+            <h3 class="reveal" style="font-size: 1.5rem; margin-top: 4rem; color: var(--accent);">안정적인 500명 수용 및 원스톱 케어
+                (One-Stop Care)</h3>
+            <div class="care-grid reveal">
+                <div class="care-card">
+                    <h3>안정적인 거주 인프라</h3>
+                    <p>• <strong>교내 기숙사:</strong> 신입생 우선 배정 (250명 규모)<br>
+                        • <strong>외곽 연계:</strong> 주변 장기임대 원룸 및 우수 셰어하우스 연계 인프라 확충<br>
+                        • 문화적 특수성을 고려한 식단 및 종교 지원 시설 완비</p>
+                </div>
+                <div class="care-card">
+                    <h3>통합 행정 지원 (One-Stop)</h3>
+                    <p>• <strong>비자/출입국:</strong> 학생비자(D-2) 발급 일괄 지원<br>
+                        • <strong>건강/체류:</strong> 외국인 등록증, 국민건강보험 일괄 관리 대행<br>
+                        • 오디션 성적 및 입학 장학 등급에 따른 기숙사비 50%~70% 할인 제공</p>
+                </div>
+                <div class="care-card">
+                    <h3>한국 적응 멘토링 매칭</h3>
+                    <p>• <strong>언어와 생활:</strong> 재학생과의 1:1 버디 프로그램 매칭 (한국어, 쇼핑, 문화 적응)<br>
+                        • <strong>지역사회 교류:</strong> 문화 탐방, 축제 참여 등 소속감을 높이는 커뮤니티 프로그램</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Center Infrastructure Sections -->
+    <section id="center" class="section"
+        style="background: linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)), url('assets/seoul_bg.png') center/cover fixed; color: white;">
+        <div class="container">
+            <h2 class="section-title center reveal" style="color: white; font-weight: 700;">
+                5대 핵심 최첨단 실습 인프라
+            </h2>
+            <div class="accent-line center reveal" style="background: rgba(255,255,255,0.4);"></div>
+            <p class="center reveal"
+                style="color: #999; margin-bottom: 4rem; font-size: 1.1rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.7;">
+                수익형 실습(K-Culture Camp/모의 라이브 등)에 100% 연계되는 현장 중심의 실무 포트폴리오 구축 스튜디오입니다.
+            </p>
+
+            <div class="roadmap-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="roadmap-card"
+                    style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); padding: 1.5rem;">
+                    <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; font-family: var(--font-en);">
+                        K-Pop Lab</h4>
+                    <p style="color: #aaa; font-size: 0.95rem;">보컬, 댄스, 앙상블 등 K-Pop 아티스트 양성 및 앨범 프로듀싱용 전문 트레이닝 공간</p>
+                </div>
+                <div class="roadmap-card"
+                    style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); padding: 1.5rem;">
+                    <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; font-family: var(--font-en);">
+                        Performance Studio</h4>
+                    <p style="color: #aaa; font-size: 0.95rem;">무대 디자인, 최신 조명/음향 실습, 공연 기획 제안서 및 모의 무대 실전 제작</p>
+                </div>
+                <div class="roadmap-card"
+                    style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); padding: 1.5rem;">
+                    <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; font-family: var(--font-en);">
+                        Beauty Lab</h4>
+                    <p style="color: #aaa; font-size: 0.95rem;">아이돌 스타일링 및 화보 촬영용 스튜디오 콜라보 포트폴리오 제작 공간</p>
+                </div>
+                <div class="roadmap-card"
+                    style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); padding: 1.5rem;">
+                    <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; font-family: var(--font-en);">
+                        Media Studio</h4>
+                    <p style="color: #aaa; font-size: 0.95rem;">방송 최적화 환경. 영상 기획/편집을 통한 유튜브 등 미디어 IP 수익 비즈니스 운영</p>
+                </div>
+                <div class="roadmap-card"
+                    style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); padding: 1.5rem;">
+                    <h4 style="color: white; font-size: 1.3rem; margin-bottom: 0.5rem; font-family: var(--font-en);">
+                        Live Commerce Studio</h4>
+                    <p style="color: #aaa; font-size: 0.95rem;">판매를 위한 상세페이지 기획/제작, 이커머스 입점 및 직접 송출 실습</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title center reveal" style="font-weight: 700;">산학협력 네트워크</h2>
+            <div class="accent-line center reveal"></div>
+
+            <!-- Global Academic Network -->
+            <div class="reveal" style="margin-bottom: 4rem;">
+                <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 1.5rem;">World Joint Partner (글로벌 2+2 조인트 디그리)</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">
+                    해외 현지 대학 2년 + 본 교육센터 2년 심화 과정을 통해 양교 학위 동시 취득 및 안정적 인재 수급 보장. 미국(ASU 등 영미권 선진 경영기법 도입 교류) 및
+                    동남아/중앙아시아 등 K-Culture 수요 거점을 집중 공략합니다.
+                </p>
+                
+                <div class="partner-logo-scroll">
+                    <img src="assets/global-images-0.jpg" class="partner-logo-item" alt="Global Partner Image">
+                    <img src="assets/global-images-1.jpg" class="partner-logo-item" alt="Global Partner Image">
+                    <img src="assets/global-images-2.jpg" class="partner-logo-item" alt="Global Partner Image">
+                    <img src="assets/global-images-3.jpg" class="partner-logo-item" alt="Global Partner Image">
+                    <img src="assets/global-images-4.jpg" class="partner-logo-item" alt="Global Partner Image">
+                    <img src="assets/global-images-5.jpg" class="partner-logo-item" alt="Global Partner Image">
+                </div>
+            </div>
+
+            <div class="reveal">
+                <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 1rem;">Academic & Industry Partner (주요 연예기획사 산학 연계망)</h3>
+                <p style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.5rem;">국내 탑 엔터테인먼트 그룹과의 실무 프로젝트
+                    투입 파트너십</p>
+                    
+                <div class="partner-logo-scroll" style="margin-bottom: 2rem;">
+                    <img src="assets/global-images-6.jpg" class="partner-logo-item" alt="Industry Partner Image">
+                    <img src="assets/global-images-7.jpg" class="partner-logo-item" alt="Industry Partner Image">
+                    <img src="assets/global-images-8.jpg" class="partner-logo-item" alt="Industry Partner Image">
+                    <img src="assets/global-images-9.jpg" class="partner-logo-item" alt="Industry Partner Image">
+                    <img src="assets/global-images-10.jpg" class="partner-logo-item" alt="Industry Partner Image">
+                    <img src="assets/global-images-11.jpg" class="partner-logo-item" alt="Industry Partner Image">
+                    <img src="assets/global-images-12.jpg" class="partner-logo-item" alt="Industry Partner Image">
+                </div>
+
+                <table class="custom-table">
+                    <thead>
+                        <tr>
+                            <th>기획사</th>
+                            <th>대표 아티스트</th>
+                            <th>채용 연계 분야</th>
+                            <th>협력 방식</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>HYBE</strong></td>
+                            <td>BTS, NewJeans, SEVENTEEN, LE SSERAFIM</td>
+                            <td>매니지먼트, 글로벌 플랫폼, IP 콘텐츠</td>
+                            <td>인턴십, 장기 현장실습, 취업 연계</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SM 엔터테인먼트</strong></td>
+                            <td>NCT, aespa, EXO, Red Velvet</td>
+                            <td>A&R, 해외 진출 사업부, 홍보, 음악 프로듀싱</td>
+                            <td>현장실습 연계, 공동 실무 프로젝트 참여</td>
+                        </tr>
+                        <tr>
+                            <td><strong>JYP 엔터테인먼트</strong></td>
+                            <td>TWICE, Stray Kids, ITZY, NMIXX</td>
+                            <td>보컬/댄스 트레이너, 퍼포먼스 기획, 해외 마케팅</td>
+                            <td>단기 집중 위탁교육, 전문 연수</td>
+                        </tr>
+                        <tr>
+                            <td><strong>YG 엔터테인먼트</strong></td>
+                            <td>BLACKPINK, TREASURE, BABYMONSTER</td>
+                            <td>음원 프로듀싱, M/V 연출, 스타일링, 브랜드 마케팅</td>
+                            <td>가치 공동 R&D, 협업</td>
+                        </tr>
+                        <tr>
+                            <td><strong>스타쉽 & 큐브</strong></td>
+                            <td>IVE, MONSTA X / (여자)아이들, BTOB 등</td>
+                            <td>프로듀싱, 기획/개발, 신인발굴팀, 글로벌 사업부</td>
+                            <td>캡스톤 과제 연계, 신인 육성 프로그램 실습</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Beauty & IT Industry Network -->
+            <div class="reveal" style="margin-top: 3rem;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">유통 및 플랫폼 기업협력망</h3>
+                <p style="color: var(--text-secondary); line-height: 1.6;">
+                    (주)미례화장품 등 뷰티 브랜드 MOU, MCN 콘텐츠 제작사 협업. 전문 라이브 커머스 판매 채널 운영 및 SNS 기반 유튜브 비즈니스 프로젝트 직접 투입.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Member Section -->
+    <section id="faculty" class="section">
+        <div class="container">
+            <h2 class="section-title center reveal" style="font-weight: 700;">World-Class Faculty</h2>
+            <div class="accent-line center reveal"></div>
+            <p class="center reveal"
+                style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; width: 100%; white-space: nowrap; overflow-x: auto; scrollbar-width: none;">
+                국내 최정상급 방송 연출가, 아이돌 전문 보컬/댄스 트레이너, 작곡가 스태프 라인업이 업계 실무형 교육과 직접 멘토링을 전담합니다.
+            </p>
+
+            <div class="faculty-row reveal">
+                <div class="faculty-small-card"><img src="assets/김태성.png" alt="김태성">
+                    <div class="role">방송제작/연출팀장</div>
+                    <h4>김태성</h4>
+                    <p>前 TV조선 제작본부 상무, SBS 라디오센터장, 백상예술대상</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/서혜정.png" alt="서혜정">
+                    <div class="role">Voice Actor & Trainer</div>
+                    <h4>서혜정</h4>
+                    <p>KBS 17기 공채 성우, '롤러코스터' 등 주요 목소리, 예능스타상 수상</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/이주선.png" alt="이주선">
+                    <div class="role">Dance Director</div>
+                    <h4>이주선</h4>
+                    <p>싸이 '강남스타일', '나팔바지' 총괄 안무 디렉팅, 200곡 연출가</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/신제니.png" alt="Jenny Shin">
+                    <div class="role">Acting Director</div>
+                    <h4>Jenny Shin</h4>
+                    <p>현 JS연기아카데미 대표, YG, FNC 소속 배우파트 신인 연기 트레이너</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/황재웅.png" alt="황재웅">
+                    <div class="role">Vocal Director</div>
+                    <h4>황재웅</h4>
+                    <p>소녀시대, 아스트로 전담, KMR 현 소속 및 전 큐브엔터 프로듀서</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/이태후.png" alt="이태후">
+                    <div class="role">Dance Leader</div>
+                    <h4>이태후</h4>
+                    <p>피네이션 총괄 퍼포먼스 디렉터, BTS 지민, 크래비티 등 안무 기획</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/김상현.png" alt="김상현">
+                    <div class="role">Vocal / Producer</div>
+                    <h4>김상현</h4>
+                    <p>프니엘, 이하이 등 작곡 참여 프로듀서</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/김은선.png" alt="김은선">
+                    <div class="role">Choreographer</div>
+                    <h4>김은선</h4>
+                    <p>YGX 댄서, 빅뱅, 블랙핑크 투어 참여 강사</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/진현진.png" alt="진현진">
+                    <div class="role">Performance</div>
+                    <h4>진현진</h4>
+                    <p>2PM 매들리 디렉, 방과후 설렘 등 안무가</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/윤재아.png" alt="윤재아">
+                    <div class="role">Choreographer</div>
+                    <h4>윤재아</h4>
+                    <p>BTS, 전소미 국내외 투어 핵심 동선 연출가</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/정민영.png" alt="정민영">
+                    <div class="role">Vocal Trainer</div>
+                    <h4>정민영</h4>
+                    <p>SBS K팝스타 편곡가 및 보컬 코치</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/이주현.png" alt="이주현">
+                    <div class="role">Vocal Trainer</div>
+                    <h4>이주현</h4>
+                    <p>미스트롯/보이스킹 트롯 전문 및 믹스나인 코치</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/이다은.png" alt="이다은">
+                    <div class="role">Vocal Trainer</div>
+                    <h4>이다은</h4>
+                    <p>다수 오디션 및 불후의명곡/더시즌즈 코러스</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/조상지.png" alt="조상기">
+                    <div class="role">Actor/Director</div>
+                    <h4>조상기</h4>
+                    <p>'펜트하우스', '미스코리아' 등 다수 대형 방송연기</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/김세정.png" alt="강세정">
+                    <div class="role">Actor</div>
+                    <h4>강세정</h4>
+                    <p>'신사와 아가씨', '보석비빔밥' 전담 조연 연기</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/김낙균.png" alt="김낙균">
+                    <div class="role">Actor</div>
+                    <h4>김낙균</h4>
+                    <p>'손해 보기 싫어서', '이혼보험' 다수 출연 및 트레이너</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/김시온.png" alt="김시온">
+                    <div class="role">Expert Faculty</div>
+                    <h4>김시온</h4>
+                    <p>K-Culture 심화 과정 및 전문가 멘토링 전담</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/조현흠.png" alt="조현흠">
+                    <div class="role">Expert Faculty</div>
+                    <h4>조현흠</h4>
+                    <p>K-Culture 심화 과정 및 전문가 멘토링 전담</p>
+                </div>
+                <div class="faculty-small-card"><img src="assets/주재훈.png" alt="주재훈">
+                    <div class="role">Expert Faculty</div>
+                    <h4>주재훈</h4>
+                    <p>K-Culture 심화 과정 및 전문가 멘토링 전담</p>
+                </div>
+                <div class="faculty-small-card"
+                    style="background: var(--bg-light); border: 2px dashed var(--border-color); display: flex; align-items: center; justify-content: center;">
+                    <p style="color: var(--text-secondary); font-weight: 500;">...and more top<br>experts participating
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audition, Scholarship & Tuition Section -->
+    <section id="scholarship" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title center reveal" style="font-weight: 700;">
+                K-STAR 글로벌 오디션 기반 장학/등록 시스템
+            </h2>
+            <div class="accent-line center reveal"></div>
+
+            <p class="center reveal" style="color: var(--text-secondary); margin-bottom: 3rem; text-align: center;">
+                전략적 거점 오디션을 통해 글로벌 K-Culture 우수 유학생을 직발굴하고 파격적인 장학 혜택을 제공합니다.<br>
+                평가 요소: 전공적합성(실력), 잠재스타성(Potential), 학업의지(Attitude).
+            </p>
+
+            <!-- Scholarship Info -->
+            <div class="scholarship-grid reveal" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="scholarship-card rank-1">
+                    <div class="rank-badge">1등 (Rank 1)</div>
+                    <h3 class="rank-title">국가별/전체<br>최상위 인재</h3>
+                    <div class="rank-value">100%</div>
+                    <p class="rank-desc">학비 감면<br><strong>4년 보장</strong></p>
+                </div>
+                <div class="scholarship-card rank-2">
+                    <div class="rank-badge">2등 (Rank 2)</div>
+                    <h3 class="rank-title">국가별<br>차상위 인재</h3>
+                    <div class="rank-value">70%</div>
+                    <p class="rank-desc">학비 감면<br><strong>4년 보장</strong></p>
+                </div>
+                <div class="scholarship-card rank-3">
+                    <div class="rank-badge">3등 (Rank 3)</div>
+                    <h3 class="rank-title">오디션 우수<br>실력 보유자</h3>
+                    <div class="rank-value">50%</div>
+                    <p class="rank-desc">학비 감면<br><strong>4년 보장</strong></p>
+                </div>
+                <!-- 입상 -->
+                <div class="scholarship-card rank-3" style="background: white; border-color:#ddd;">
+                    <div class="rank-badge" style="background: #ccc; color: black;">입상 (Honors)</div>
+                    <h3 class="rank-title">오디션 기본<br>입상/합격자</h3>
+                    <div class="rank-value">30%</div>
+                    <p class="rank-desc">학비 감면<br><strong>장학 혜택</strong></p>
+                </div>
+            </div>
+
+            <div class="maintenance-box reveal" style="margin-bottom: 4rem;">
+                <h4 style="color: var(--accent);">장학 연속 유지 조건 (비자 조건 연동)</h4>
+                <p>평점 <strong>3.0 이상</strong> 유지 (기준시점 4.5) &nbsp;|&nbsp; 출석률 <strong>80% 이상</strong> 달성</p>
+            </div>
+
+            <!-- Tuition Transparency -->
+            <h3 class="reveal" style="font-size: 1.5rem; text-align: center; margin-bottom: 1.5rem;">기본 등록금 및 실험/실습비 구조
+            </h3>
+            <div class="reveal">
+                <table class="custom-table" style="max-width: 800px; margin: 0 auto; margin-bottom: 2rem;">
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>기본 학기 등록금</th>
+                            <th>학기별 실험실습비</th>
+                            <th>학기 총액</th>
+                            <th>연간 총액 (2학기)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>금액 (KRW)</strong></td>
+                            <td>5,000,000 원</td>
+                            <td>1,700,000 원</td>
+                            <td style="color: var(--accent); font-weight: 700;">6,700,000 원</td>
+                            <td style="color: #c9302c; font-weight: 700;">13,400,000 원</td>
+                        </tr>
+                        <tr>
+                            <td><strong>비고 내역</strong></td>
+                            <td style="font-size:0.85rem; color:#777;">학사 경영/교수 교육</td>
+                            <td style="font-size:0.85rem; color:#777;">스튜디오 인프라, 고급 장비 사용료</td>
+                            <td style="font-size:0.85rem; color:#777;">장학 혜택 고지서 선 반영 적용</td>
+                            <td style="font-size:0.85rem; color:#777;">외국인 글로벌 분할결제 지원</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="text-align: center; color: var(--text-secondary); font-size: 0.95rem;">
+                    * <strong>명확한 환불 규정:</strong> 비자 거절 및 중도 포기 등의 사유 발생 시 투명하고 신속한 환불 처리 규정을 준수합니다.<br>
+                    * <strong>투명한 운영:</strong> 오디션 전형료 3만 원은 입학 시 결제금에서 차감, 탈락 시 50%가 규정에 따라 반환됩니다.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Application / Roadmap Timeline Section -->
+    <section id="apply" class="section">
+        <div class="container">
+            <h2 class="section-title center reveal" style="font-weight: 700;">
+                Application Process & Timeline
+            </h2>
+            <div class="accent-line center reveal"></div>
+
+            <div class="timeline reveal" style="margin-bottom: 0;">
+                <div class="timeline-item reveal" style="margin-bottom: 2.5rem;">
+                    <div class="step-num step-month"
+                        style="font-family: var(--font-en); background: var(--text-primary); color: white;">3월</div>
+                    <div class="step-content">
+                        <h4 style="font-weight: 700; color: var(--accent);">STEP 1: 온라인 지원서 접수</h4>
+                        <p>전 세계 대상 시스템 오픈. 웹사이트 양식 제출 및 3분 이내 퍼포먼스 영상 업로드 필수</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="margin-bottom: 2.5rem;">
+                    <div class="step-num step-month"
+                        style="font-family: var(--font-en); background: var(--text-primary); color: white;">4월초</div>
+                    <div class="step-content">
+                        <h4 style="font-weight: 700; color: var(--accent);">STEP 2: 서류 및 1차 영상 전문가 심사</h4>
+                        <p>제출 영상 기반 K-POP, 댄스 전문가 서류 적합성 평가. 통과 시 현지 오디션 자격 부여</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="margin-bottom: 2.5rem;">
+                    <div class="step-num step-month"
+                        style="font-family: var(--font-en); background: var(--text-primary); color: white;">4월말</div>
+                    <div class="step-content">
+                        <h4 style="font-weight: 700; color: var(--accent);">STEP 3: 해외 거점 실기 오디션</h4>
+                        <p>대사관 협업 국가별 현지 실사. 15분 심층 멘토링 평가 및 기획사 프로듀서 공동 면접관 배정</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="margin-bottom: 4rem;">
+                    <div class="step-num step-month"
+                        style="font-family: var(--font-en); background: var(--text-primary); color: white;">5월</div>
+                    <div class="step-content">
+                        <h4 style="font-weight: 700; color: var(--accent);">STEP 4: 합격자 발표 및 입국 수속</h4>
+                        <p>장학 등급 부여 등 심사 결과 발표, 단체 메디컬 체크 및 국내 D-2 학생 비자 발급 및 입국 시작</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal"
+                style="text-align: center; border-radius: 8px; border: 1px dashed #bbb; padding: 2rem; background: var(--bg-light);">
+                <h3 style="margin-bottom: 1rem; color: var(--accent);">추진 로드맵 목표</h3>
+                <p style="color: var(--text-primary);">[1단계] 학과 신설 인가 및 전담 TFT 구성 -> [2단계] 해외 자매대학 MOU 확립 -> [최종] 26년
+                    후반기 1기 입학, 27년 공식 출범</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="reveal">
+                <h3 class="footer-title" style="font-family: var(--font-en);">K-Culture</h3>
+                <p class="footer-desc">
+                    글로벌 무대를 이끌어갈 전 세계 차세대 인재들의 꿈을 지원합니다.
+                </p>
+            </div>
+            <div class="footer-contact reveal">
+                <a href="mailto:admission@global-k.edu" style="font-family: var(--font-en);">admission@global-k.edu</a>
+                <p class="copyright" style="font-family: var(--font-en);">
+                    © 2026 Global K-Culture Elite Program. All rights reserved.
+                </p>
+            </div>
+        </div>
+        <div class="container reveal"
+            style="padding-top: 2rem; margin-top: 2rem; border-top: 1px solid var(--border-color); display: flex; justify-content: center; align-items: center; gap: 3rem;">
+            <img src="assets/signature-logo.png" alt="University Partnership Logo"
+                style="max-width: 150px; opacity: 0.6; filter: grayscale(100%);">
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
